@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingView">
+        <attr name="Loadspeed" format="integer"></attr>
+        <attr name="LoadColor" format="reference"></attr>
+        <attr name="Loadwidth" format="dimension"></attr>
+    </declare-styleable>
+    <attr name="mainposition">
+        <enum name="LEFT_TOP" value="0"></enum>
+        <enum name="LEFT_BOTTOM" value="1"></enum>
+        <enum name="RIGHT_TOP" value="2"></enum>
+        <enum name="RIGHT_BOTTOM" value="3"></enum>
+    </attr>
+    <attr name="floatingmenulayout">
+        <enum name="line" value="0"></enum>
+        <enum name="circle" value="1"></enum>
+    </attr>
+    <declare-styleable name="floatingmenu">
+        <attr name="mainposition"></attr>
+        <attr name="floatingmenulayout"></attr>
+        <attr name="distanct" format="dimension"></attr>
+    </declare-styleable>
+</resources>

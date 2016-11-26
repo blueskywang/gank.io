@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.bluesky.gankio.newView.floatingmenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:mainposition="RIGHT_BOTTOM"
+    app:floatingmenulayout="circle"
+    android:id="@+id/menu"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        app:rippleColor="@color/toolbar"
+        android:src="@mipmap/writer"
+        app:borderWidth="0dp"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.FloatingActionButton
+        app:borderWidth="0dp"
+        android:src="@mipmap/love"
+        android:layout_width="wrap_content"
+        app:rippleColor="@color/toolbar"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.FloatingActionButton
+        app:borderWidth="0dp"
+        android:src="@mipmap/firstx"
+        android:padding="10dp"
+        app:rippleColor="@color/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</com.example.bluesky.gankio.newView.floatingmenu>

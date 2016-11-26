@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/writerinfo"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:text="@string/writername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/info"
+        android:layout_below="@+id/name"
+        android:text="@string/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/forway"
+        android:layout_below="@+id/info"
+        android:layout_toLeftOf="@+id/concet"
+        android:layout_marginRight="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/info"
+        android:id="@+id/concet"
+        android:text="@string/conect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerInParent="true"
+        android:text="@string/email"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/concet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

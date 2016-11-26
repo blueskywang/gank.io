@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">gank.io</string>
+    <string name="action_settings">Settings</string>
+    <string name="net_tell">好像出了点小问题，点击重试</string>
+    <string name="writer">作者</string>
+    <string name="writername">未定</string>
+    <string name="email">未定</string>
+    <string name="conect">联系方式</string>
+    <string name="info">这人很懒，什么也没留下</string>
+    <string name="nothing">找找也许有什么你喜欢的</string>
+    <string name="copy">复制到剪切板</string>
+    <string name="open">打开浏览器</string>
+    <string name="reload">刷新</string>
+    <string name="share">分享</string>
+    <string name="bookmarker">导出书签</string>
+</resources>
