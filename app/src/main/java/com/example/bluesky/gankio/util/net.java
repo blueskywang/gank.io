@@ -32,13 +32,12 @@ public class net {
     public static void GoToNet(Context context){
         Intent intent = null;
         // 先判断当前系统版本
-        if(android.os.Build.VERSION.SDK_INT > 10){  // 3.0以上
-            intent = new Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS);
-        }else{
-            intent = new Intent();
-            intent.setClassName("com.android.settings", "com.android.settings.WirelessSettings");
+        if(android.os.Build.VERSION.SDK_INT > 10 ){
+            //3.0以上打开设置界面，也可以直接用ACTION_WIRELESS_SETTINGS打开到wifi界面
+            context.startActivity(new Intent(android.provider.Settings.ACTION_SETTINGS));
+        } else {
+            context.startActivity(new Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS));
         }
-        context.startActivity(intent);
     }
 
 }
