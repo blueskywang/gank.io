@@ -33,6 +33,7 @@ import com.example.bluesky.gankio.Presenter.LovePresenter;
 import com.example.bluesky.gankio.R;
 import com.example.bluesky.gankio.util.StatusBarCompat;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -49,7 +50,7 @@ public class LoveAcitivity extends AppCompatActivity implements ILovepresenter, 
     RecyclerView RvLove;
     @BindView(R.id.LL_noShow)
     LinearLayout LLNoShow;
-    private List<LoveDate> mLoveDates;
+    private List<LoveDate> mLoveDates=new ArrayList<>();
     private LoveAdapter arr;
     private LovePresenter lovePresenter;
 

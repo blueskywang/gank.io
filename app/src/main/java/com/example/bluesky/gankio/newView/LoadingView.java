@@ -131,7 +131,6 @@ public class LoadingView extends SurfaceView implements Runnable,SurfaceHolder.C
                     ofx=ofx-speed;
                     ofy=ofy-speed*bi;
                     if(ofy<=startY)sign=goback;
-                    Log.i("ofy", "doDraw: "+ofy);
                     mpath.lineTo(ofx,ofy);
                     break;
                 case goback:
