@@ -12,7 +12,7 @@ import retrofit2.http.Path;
 
 public interface Getgankio {
     //获取某一类型的数据
-    @GET("{type}/{month}/{day}")
-    Call<AIWDate>  GetGankio(@Path("type") String type,@Path("month")String month,@Path("day")String day);
+    @GET("{type}/{menu}/{time}")
+    Call<AIWDate>  GetGankio(@Path("type") String type,@Path("menu")String month,@Path("time")String day);
 
 }

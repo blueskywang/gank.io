@@ -75,7 +75,7 @@ public class HttpMethods {
        }
         Log.i(TAG, "getDate: "+kind);
         Log.i(TAG, "getDate: "+kindname);
-        Call<AIWDate> k=service.GetGankio(kindname,"10","1");
+        Call<AIWDate> k=service.GetGankio(kindname,"30","1");
        k.enqueue(new Callback<AIWDate>() {
            @Override
            public void onResponse(Call<AIWDate> call, Response<AIWDate> response) {
