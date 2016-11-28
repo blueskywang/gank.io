@@ -3,9 +3,11 @@ package com.example.bluesky.gankio.util;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
@@ -18,6 +20,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -58,7 +61,7 @@ public class ForTool {
         progressDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         return progressDialog;
     }
-    public AlertDialog WriterShow(Context c){
+    public AlertDialog WriterShow( final  Context c){
         LayoutInflater inflater = LayoutInflater.from(c);
         View v=inflater.inflate(R.layout.writerinfo,null);
         final AlertDialog dialog = new AlertDialog.Builder(c).create();
@@ -67,6 +70,17 @@ public class ForTool {
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.writerinfo);
         //设置边框为圆角的
         dialog.getWindow().setContentView(v)  ; // 自定义dialog
+        TextView t=(TextView)v.findViewById(R.id.email);
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setAction("android.intent.action.VIEW");
+                Uri content_url = Uri.parse("https://github.com/blueskywang/gank.io/blob/master/README.md");
+                intent.setData(content_url);
+                c.startActivity(intent);
+            }
+        });
 
         return dialog;
     }

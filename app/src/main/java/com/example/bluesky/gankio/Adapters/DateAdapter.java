@@ -12,9 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.bluesky.gankio.DateBean.AIWDate;
-import com.example.bluesky.gankio.DateBean.LoveDate;
 import com.example.bluesky.gankio.R;
-import com.example.bluesky.gankio.View.LoadView;
+import com.example.bluesky.gankio.Model.LoadView;
 import com.example.bluesky.gankio.util.ForTool;
 
 import java.util.List;

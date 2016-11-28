@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
+ *
+ * 沉浸式状态栏
  * Created by localhost on 2016/11/17.
  */
 

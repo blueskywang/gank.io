@@ -1,4 +1,4 @@
-package com.example.bluesky.gankio.View;
+package com.example.bluesky.gankio.Model;
 
 import com.example.bluesky.gankio.DateBean.AIWDate;
 

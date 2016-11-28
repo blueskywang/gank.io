@@ -3,8 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="net_tell">好像出了点小问题，点击重试</string>
     <string name="writer">作者</string>
-    <string name="writername">未定</string>
-    <string name="email">未定</string>
+    <string name="writername">bluesky</string>
+    <string name="email"><u>简书 邮箱</u></string>
     <string name="conect">联系方式</string>
     <string name="info">这人很懒，什么也没留下</string>
     <string name="nothing">找找也许有什么你喜欢的</string>

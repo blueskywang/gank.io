@@ -7,7 +7,7 @@ import android.util.Log;
 import com.example.bluesky.gankio.DateBean.AIWDate;
 import com.example.bluesky.gankio.Model.Date.HttpMethods;
 import com.example.bluesky.gankio.Model.LoadDate;
-import com.example.bluesky.gankio.View.LoadView;
+import com.example.bluesky.gankio.Model.LoadView;
 
 /**
  * Created by localhost on 2016/11/17.
